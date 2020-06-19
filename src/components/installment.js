@@ -24,6 +24,9 @@ export default function Installment({ installment }) {
 
         <div className={css.flexColumn}>
           <span className={classValue}>
+            <strong>{formatter.formatMoney(value)}</strong>
+          </span>
+          <span className={classValue}>
             <strong>{formatter.formatMoneyPositiveNegative(difference)}</strong>
           </span>
           <span className={classPercent}>
